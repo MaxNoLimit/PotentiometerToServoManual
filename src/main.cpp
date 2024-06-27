@@ -13,6 +13,7 @@ void setup()
   pinMode(SERVO_PWM_PIN, OUTPUT);
   pinMode(MOSFET_GATE_1, OUTPUT);
   pinMode(MOSFET_GATE_2, OUTPUT);
+  pinMode(INPUT_FROM_POTENTIOMETER, INPUT);
 
   digitalWrite(MOSFET_GATE_1, HIGH);
   digitalWrite(MOSFET_GATE_2, HIGH);
@@ -31,6 +32,11 @@ void loop()
   // put your main code here, to run repeatedly:
   // pwm_manual();
   // pwm_manual_2();
-  wayangHandServoMechanicsTest();
+  // wayangHandServoMechanicsTest()
+  digitalWrite(MOSFET_GATE_1, HIGH);
+  digitalWrite(MOSFET_GATE_2, HIGH);
+  analogReadValueToDegree();
+  digitalWrite(MOSFET_GATE_1, LOW);
+  digitalWrite(MOSFET_GATE_2, LOW);
 }
 

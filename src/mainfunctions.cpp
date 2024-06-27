@@ -170,7 +170,7 @@ void degreeSpin(int degree)
 
 void analogReadValueToDegree()
 {
-    int sensorValue = analogRead(A0);
+    int sensorValue = analogRead(INPUT_FROM_POTENTIOMETER);
     int degree = map(sensorValue, 0, 4095, 0, 180);
     degreeSpin(degree);
 }

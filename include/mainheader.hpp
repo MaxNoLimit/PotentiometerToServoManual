@@ -6,6 +6,7 @@
 #define SERVO_PWM_PIN 25
 #define MOSFET_GATE_1 33
 #define MOSFET_GATE_2 32
+#define INPUT_FROM_POTENTIOMETER 34
 
 void turn_0_deg();
 void turn_0_deg_2();
