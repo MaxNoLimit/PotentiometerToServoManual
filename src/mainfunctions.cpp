@@ -4,7 +4,7 @@ int angle_0 = 500;
 int angle_90 = 1500;
 int angle_180 = 2500;
 
-int amount_of_wave = 10;
+int amount_of_wave = 20;
 
 int max_period = 20000;
 
