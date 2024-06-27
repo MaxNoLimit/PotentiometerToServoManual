@@ -32,11 +32,11 @@ void loop()
   // put your main code here, to run repeatedly:
   // pwm_manual();
   // pwm_manual_2();
-  // wayangHandServoMechanicsTest()
-  digitalWrite(MOSFET_GATE_1, HIGH);
-  digitalWrite(MOSFET_GATE_2, HIGH);
-  analogReadValueToDegree();
-  digitalWrite(MOSFET_GATE_1, LOW);
-  digitalWrite(MOSFET_GATE_2, LOW);
+  wayangHandServoMechanicsTest();
+  // digitalWrite(MOSFET_GATE_1, HIGH);
+  // digitalWrite(MOSFET_GATE_2, HIGH);
+  // analogReadValueToDegree();
+  // digitalWrite(MOSFET_GATE_1, LOW);
+  // digitalWrite(MOSFET_GATE_2, LOW);
 }
 
